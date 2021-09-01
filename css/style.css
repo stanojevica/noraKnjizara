@@ -1,0 +1,194 @@
+*{margin:0px;
+padding:0px;
+box-sizing: border-box;
+}
+
+body{
+	font-family: 'Kurale', serif;
+	background:url("../slike/cover.jpg") #c2c2c2;
+	background-attachment:fixed;
+	background-position:cover;
+	background-repeat:no-repeat;
+}
+nav,#knjige,footer{
+	border: 0.2px solid #7f624d;
+	width:98%;
+	margin:10px auto;
+}
+#okvir{
+	width:1000px;
+	background-color: rgba( 255, 255, 255, 0.6);
+	margin:0px auto;
+	padding-bottom:5px;
+}
+header{
+	width:98%;
+	height:100px;
+	margin:0px auto;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+#logo{
+	display:flex;
+	align-items:center;
+	font-family: 'Charmonman', cursive;
+	width:150px;
+	text-wrap:wrap;
+	line-height:40px;
+}
+#logo img{
+	box-shadow:none;
+	position:relative;
+	animation-name: animacija;
+    animation-duration: 3s;    
+    animation-fill-mode: forwards;
+	-webkit-transition: -webkit-transform .8s 
+}
+#logo img:hover{
+	transform:rotate(100deg);
+    -ms-transform:rotate(100deg);
+    -webkit-transform:rotate(100deg);
+}
+@keyframes animacija {
+    from {top: -300px;left:-500px;}
+    to {top: 0px;left:0px;}
+}
+#drustvene-mreze{
+	width:350px;
+	padding:7px 2px;
+	border: 0.2px solid #7f624d;
+}
+ul{
+	list-style-type:none;
+}
+#drustvene-mreze ul {
+	display:flex;
+	justify-content:space-between;
+}
+
+input{
+	background-color:rgba( 255, 255, 255, 0.4);
+}
+	
+nav{
+	height:50px;
+	border: 0.2px solid #7f624d;
+}
+nav ul li {
+	float:left;
+	margin:10px 18px;
+}
+a{
+	text-decoration:none;
+	color:#b2886b;
+	font-size:25px;
+}
+i {
+	font-size:20px;
+	color: #b2886b;
+}
+nav ul .aktivanlink a, .aktivanlink i{
+	color:#7f624d;
+}
+#slika{
+	width:98%;
+	height:350px;
+	margin:20px auto;
+}
+#knjige{
+	padding-top:10px;
+}
+.podela{
+	width:98%;
+	margin:0px auto;
+}
+.najpopularnije{
+	width:98%;
+	height:300px;
+	background-color: #fff;
+	margin:20px auto;
+}
+.knjiga1{
+	display:flex;
+	justify-content:space-around;
+	margin-top:2%;
+}
+h1,h2 {
+	font-size:30px;
+	text-align:center;
+	color:#b2886b;
+}
+h3{
+	font-size:20px;
+	color:#7f624d;
+	margin-left:3px;
+}
+h4{
+	font-size:18px;
+	color:#7f624d;
+	text-align:center;
+}
+.romani{
+	padding:3px 0px;
+	display:flex;
+	justify-content:space-around;
+}
+.romani img{
+	width:100px;
+}
+.romani figure{
+	width:100px;
+	text-wrap:wrap;
+}
+.romani figure:hover{
+	background-color:rgba(255, 255, 255, 0.8);
+}
+figcaption{
+	font-size:14px;
+	text-align:center;
+	color:#7f624d;
+}
+.dodaci{
+	display:flex;
+	justify-content:space-around;
+	padding:3px 0px;
+}
+
+.opis{
+	margin:15px 3px;
+	display:flex;
+	justify-content:space-between;
+}
+.opis img{
+	height:210px;
+}
+.opis p{
+	margin:5px 10px 0px 0px;
+}
+table tr td{
+	padding:5px;
+}
+
+.izgled{
+	display:flex;
+	justify-content:space-around;
+}
+.knjiga3{
+	float:left;
+	margin:19px;
+}
+footer{
+	display:flex;
+	align-items:center;
+	flex-direction: column;
+}
+footer p,footer h3{
+	text-align:center;
+}
+.text a,.opis a{
+	font-size:18px;
+}
+img{
+	box-shadow:-1.5px 1px 10px #5b493b;
+}
